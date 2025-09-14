@@ -1,6 +1,10 @@
 ## Better Item Drops
 
-五描述
+无描述
+
+### 注意
+
+该模组重写了 RenderItem.doRenderItem, RenderItem.renderDroppedItem 方法，可能会与其他模组冲突
 
 ### 前置模组
 
