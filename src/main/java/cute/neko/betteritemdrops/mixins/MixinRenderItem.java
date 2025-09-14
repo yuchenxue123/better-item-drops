@@ -56,10 +56,10 @@ public abstract class MixinRenderItem extends MixinRender {
                     par1EntityItem.rotationPitch = -180;
                 }
 
-                if (renderInFrame) {
+//                if (renderInFrame) {
                     GL11.glRotatef(pitch, 1.0F, 0.0F, 0.0F);
                     GL11.glRotatef(par1EntityItem.rotationYaw, 0.0F, 0.0F, 1.0F);
-                }
+//                }
 
             } else {
                 float var11 = MathHelper.sin(((float) par1EntityItem.age + par9) / 10.0F + par1EntityItem.hoverStart) * 0.1F + 0.1F;
@@ -200,7 +200,7 @@ public abstract class MixinRenderItem extends MixinRender {
         float var14 = 0.5F;
         float var15 = 0.25F;
 
-        if (this.renderManager.options.isFancyGraphicsEnabled())
+        if (this.renderManager.options.isFancyGraphicsEnabled() || BIDConfig.INSTANCE.isThreeDimensional())
 //        if (BIDConfig.INSTANCE.isThreeDimensional())
         {
             GL11.glPushMatrix();
@@ -209,7 +209,7 @@ public abstract class MixinRenderItem extends MixinRender {
             if (BIDConfig.INSTANCE.isThreeDimensional()) {
                 if (renderInFrame) {
                     if (par1EntityItem.onGround) {
-//                GL11.glRotatef(90.0F, 1.0F, 0.0F, 0.0F);
+//                        GL11.glRotatef(90.0F, 1.0F, 0.0F, 0.0F);
                     } else {
                         GL11.glRotatef(
                                 (((float) par1EntityItem.age + par4) / 20.0F + par1EntityItem.hoverStart) * (180F / (float) Math.PI),
