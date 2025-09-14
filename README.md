@@ -1,6 +1,6 @@
-## Mite Mod Kotlin Example
+## Better Item Drops
 
-一个使用了Kotlin的mite模组示例.
+五描述
 
 ### 前置模组
 
