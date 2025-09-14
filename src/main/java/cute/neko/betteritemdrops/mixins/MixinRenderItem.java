@@ -1,4 +1,4 @@
-package cute.neko.example.mixins;
+package cute.neko.betteritemdrops.mixins;
 
 import cute.neko.betteritemdrops.BIDConfig;
 import net.minecraft.*;
@@ -7,10 +7,6 @@ import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Overwrite;
 import org.spongepowered.asm.mixin.Shadow;
-import org.spongepowered.asm.mixin.injection.At;
-import org.spongepowered.asm.mixin.injection.Inject;
-import org.spongepowered.asm.mixin.injection.ModifyVariable;
-import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 import java.util.Random;
 

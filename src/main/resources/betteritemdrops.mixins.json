@@ -1,6 +1,6 @@
 {
   "required": true,
-  "package": "cute.neko.example.mixins",
+  "package": "cute.neko.betteritemdrops.mixins",
   "compatibilityLevel": "JAVA_17",
   "target": "DEFAULT",
   "minVersion": "0.8.3",

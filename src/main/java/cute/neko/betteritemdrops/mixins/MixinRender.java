@@ -1,4 +1,4 @@
-package cute.neko.example.mixins;
+package cute.neko.betteritemdrops.mixins;
 
 import net.minecraft.Entity;
 import net.minecraft.Render;
