@@ -31,7 +31,7 @@ public abstract class MixinRenderItem extends MixinRender {
 
     /**
      * @author yuchenxue
-     * @reason sb
+     * @reason no
      */
     @Overwrite
     public void doRenderItem(EntityItem par1EntityItem, double par2, double par4, double par6, float par8, float par9) {
@@ -42,7 +42,7 @@ public abstract class MixinRenderItem extends MixinRender {
         if (var10.getItem() != null) {
             GL11.glPushMatrix();
 
-            // b
+            // no
             if (BIDConfig.INSTANCE.isThreeDimensional()) {
                 if (var10.getItem() instanceof ItemBlock) {
                     GL11.glTranslatef((float) par2, (float) par4 + 0.02F, (float) par6);
@@ -56,10 +56,10 @@ public abstract class MixinRenderItem extends MixinRender {
                     par1EntityItem.rotationPitch = -180;
                 }
 
-//                if (renderInFrame) {
+                if (renderInFrame) {
                     GL11.glRotatef(pitch, 1.0F, 0.0F, 0.0F);
                     GL11.glRotatef(par1EntityItem.rotationYaw, 0.0F, 0.0F, 1.0F);
-//                }
+                }
 
             } else {
                 float var11 = MathHelper.sin(((float) par1EntityItem.age + par9) / 10.0F + par1EntityItem.hoverStart) * 0.1F + 0.1F;
@@ -98,7 +98,7 @@ public abstract class MixinRenderItem extends MixinRender {
             if (var10.getItemSpriteNumber() == 0 && var10.itemID < Block.blocksList.length && Block.blocksList[var10.itemID] != null && RenderBlocks.renderItemIn3d(Block.blocksList[var10.itemID].getRenderType())) {
                 Block var21 = Block.blocksList[var10.itemID];
 
-                // b
+                // no
                 if (!BIDConfig.INSTANCE.isThreeDimensional()) {
                     GL11.glRotatef(var12, 0.0F, 1.0F, 0.0F);
                 }
@@ -181,7 +181,7 @@ public abstract class MixinRenderItem extends MixinRender {
 
     /**
      * @author yuchenxue
-     * @reason sb
+     * @reason no
      */
     @Overwrite
     private void renderDroppedItem(EntityItem par1EntityItem, Icon par2Icon, int par3, float par4, float par5, float par6, float par7) {
